@@ -1,0 +1,15 @@
+Stage 2 – Profiling Report
+
+Tested two implementations of the Convex Hull algorithm:
+1. std::vector
+2. std::list
+
+Input: 10,000 points (from input_large.txt)
+
+Results:
+- vector: 0.0045s
+- list:   0.0085s
+
+Conclusion:
+The vector implementation is faster because it provides better memory locality and enables efficient sorting and access.
+In contrast, std::list has more pointer overhead and slower traversal, which makes it less suitable in this scenario.
