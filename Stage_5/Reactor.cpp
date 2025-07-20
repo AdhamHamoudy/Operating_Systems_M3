@@ -6,7 +6,7 @@
 Reactor::Reactor() : running(false) {}
 
 Reactor::~Reactor() {
-    // לא מוחק אוטומטית כי המשתמש שולט בזה
+    // Does not delete automatically – user controls destruction
     stop();
 }
 
